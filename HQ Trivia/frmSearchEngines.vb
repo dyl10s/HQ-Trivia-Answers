@@ -14,8 +14,8 @@
     Private Sub loadData()
 
         searchEngines.Clear()
-        lbMeathod1.Items.Clear()
-        lbMeathod2.Items.Clear()
+        lbmethod1.Items.Clear()
+        lbmethod2.Items.Clear()
 
         Dim fr = New IO.StreamReader(dataPath)
         Dim dataString As String = fr.ReadToEnd
@@ -27,12 +27,12 @@
                 Dim line As String = dataLines(i)
                 If line.Split(";")(2) = 1 Then
 
-                    lbMeathod1.Items.Add(line.Split(";")(0))
+                    lbmethod1.Items.Add(line.Split(";")(0))
                     searchEngines.Add(New clsSearchEngine(line.Split(";")(0), line.Split(";")(1), 1))
 
                 ElseIf line.Split(";")(2) = 2 Then
 
-                    lbMeathod2.Items.Add(line.Split(";")(0))
+                    lbmethod2.Items.Add(line.Split(";")(0))
                     searchEngines.Add(New clsSearchEngine(line.Split(";")(0), line.Split(";")(1), 2))
 
                 End If
@@ -45,15 +45,15 @@
 
     End Sub
 
-    Private Sub lbMeathod2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbMeathod2.SelectedIndexChanged
+    Private Sub lbmethod2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbmethod2.SelectedIndexChanged
 
-        lbMeathod1.ClearSelected()
+        lbmethod1.ClearSelected()
 
     End Sub
 
-    Private Sub lbMeathod1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbMeathod1.SelectedIndexChanged
+    Private Sub lbmethod1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbmethod1.SelectedIndexChanged
 
-        lbMeathod2.ClearSelected()
+        lbmethod2.ClearSelected()
 
     End Sub
 
@@ -61,24 +61,24 @@
 
         Dim label As String = InputBox("What is the search engines name?")
         Dim url As String = InputBox("What is the search url you wish to use:")
-        Dim meathod As String = InputBox("What meathod would you like to use (1 or 2)")
+        Dim method As String = InputBox("What method would you like to use (1 or 2)")
 
-        Dim meathodInt As Integer = Integer.Parse(meathod)
+        Dim methodInt As Integer = Integer.Parse(method)
 
-        If meathodInt = 1 Or meathodInt = 2 Then
-            addSearchEngine(label, url, meathodInt)
+        If methodInt = 1 Or methodInt = 2 Then
+            addSearchEngine(label, url, methodInt)
         Else
-            MsgBox("Invalid meathod was entered")
+            MsgBox("Invalid method was entered")
         End If
 
 
     End Sub
 
-    Public Sub addSearchEngine(label As String, url As String, meathod As String)
+    Public Sub addSearchEngine(label As String, url As String, method As String)
 
         Dim fw As IO.StreamWriter
 
-        Dim newSE As New clsSearchEngine(label, url, meathod)
+        Dim newSE As New clsSearchEngine(label, url, method)
 
         fw = New IO.StreamWriter(dataPath, True)
         fw.WriteLine(vbCrLf + newSE.toString)
@@ -94,21 +94,21 @@
 
         Dim deletedEngine As New clsSearchEngine("", "", 0)
         Dim selectedText As String = ""
-        Dim meathodNum As String = ""
+        Dim methodNum As String = ""
 
-        If lbMeathod1.SelectedItem <> Nothing Then
-            selectedText = lbMeathod1.SelectedItem.ToString
-            meathodNum = "1"
+        If lbmethod1.SelectedItem <> Nothing Then
+            selectedText = lbmethod1.SelectedItem.ToString
+            methodNum = "1"
         End If
 
-        If lbMeathod2.SelectedItem <> Nothing Then
-            selectedText = lbMeathod2.SelectedItem.ToString
-            meathodNum = "2"
+        If lbmethod2.SelectedItem <> Nothing Then
+            selectedText = lbmethod2.SelectedItem.ToString
+            methodNum = "2"
         End If
 
 
         For Each se In searchEngines
-            If se.toString.Split(";")(0) = selectedText AndAlso se.toString.Split(";")(2) = meathodNum Then
+            If se.toString.Split(";")(0) = selectedText AndAlso se.toString.Split(";")(2) = methodNum Then
                 deletedEngine = se
             End If
         Next
@@ -139,32 +139,32 @@
 
         Dim editedEngine As New clsSearchEngine("", "", 0)
         Dim selectedText As String = ""
-        Dim meathodNum As String = ""
+        Dim methodNum As String = ""
 
-        If lbMeathod1.SelectedItem <> Nothing Then
-            selectedText = lbMeathod1.SelectedItem.ToString
-            meathodNum = "1"
+        If lbmethod1.SelectedItem <> Nothing Then
+            selectedText = lbmethod1.SelectedItem.ToString
+            methodNum = "1"
         End If
 
-        If lbMeathod2.SelectedItem <> Nothing Then
-            selectedText = lbMeathod2.SelectedItem.ToString
-            meathodNum = "2"
+        If lbmethod2.SelectedItem <> Nothing Then
+            selectedText = lbmethod2.SelectedItem.ToString
+            methodNum = "2"
         End If
 
         For Each se As clsSearchEngine In searchEngines
-            If se.toString.Split(";")(0) = selectedText AndAlso se.toString.Split(";")(2) = meathodNum Then
+            If se.toString.Split(";")(0) = selectedText AndAlso se.toString.Split(";")(2) = methodNum Then
                 editedEngine = se
             End If
         Next
 
         Dim startingLabel As String = editedEngine.toString.Split(";")(0)
         Dim startingURL As String = editedEngine.toString.Split(";")(1)
-        Dim startingMeathod As String = editedEngine.toString.Split(";")(2)
+        Dim startingmethod As String = editedEngine.toString.Split(";")(2)
 
 
         Dim changedLabel As String = InputBox("What would you like to change the label to?", "HQ Trivia", startingLabel)
         Dim changedURL As String = InputBox("What would you like to change the URL to?", "HQ Trivia", startingURL)
-        Dim changedMeathod As String = InputBox("What would you like to change the meathod to?", "HQ Trivia", startingMeathod)
+        Dim changedmethod As String = InputBox("What would you like to change the method to?", "HQ Trivia", startingmethod)
 
         Dim fr As New IO.StreamReader(dataPath)
         Dim dataText As String = fr.ReadToEnd
@@ -172,7 +172,7 @@
         fr.Dispose()
 
         Dim fw As New IO.StreamWriter(dataPath, False)
-        dataText = dataText.Replace(startingLabel + ";" + startingURL + ";" + startingMeathod, changedLabel + ";" + changedURL + ";" + changedMeathod)
+        dataText = dataText.Replace(startingLabel + ";" + startingURL + ";" + startingmethod, changedLabel + ";" + changedURL + ";" + changedmethod)
         fw.Write(dataText)
         fw.Close()
         fw.Dispose()

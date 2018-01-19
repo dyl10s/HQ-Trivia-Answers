@@ -90,7 +90,7 @@ Public Class frmMain
         fr.Close()
         fr.Dispose()
 
-        If cbxMeathod1.Checked Then
+        If cbxmethod1.Checked Then
             For i As Integer = 0 To lines.Length - 1
                 If lines(i) <> "" AndAlso lines(i).Split(";")(2) = "1" Then
                     searchMethod(lines(i).Split(";")(1), lines(i).Split(";")(0) + ": ")
@@ -98,10 +98,10 @@ Public Class frmMain
             Next
         End If
 
-        If cbxMeathod2.Checked Then
+        If cbxmethod2.Checked Then
             For i As Integer = 0 To lines.Length - 1
                 If lines(i) <> "" AndAlso lines(i).Split(";")(2) = "2" Then
-                    findMeathod(lines(i).Split(";")(1), lines(i).Split(";")(0) + ": ")
+                    findmethod(lines(i).Split(";")(1), lines(i).Split(";")(0) + ": ")
                 End If
             Next
         End If
@@ -289,7 +289,7 @@ Public Class frmMain
 
     End Sub
 
-    Public Sub findMeathod(searchUrl As String, lblText As String)
+    Public Sub findmethod(searchUrl As String, lblText As String)
 
         Dim res1 As String = HTTPrequest(searchUrl + ans1)
         Dim res2 As String = HTTPrequest(searchUrl + ans2)

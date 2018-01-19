@@ -120,13 +120,10 @@
   <metadata name="ttBW.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="ttBW.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="cbxMeathod1.ToolTip" xml:space="preserve">
+  <data name="cbxmethod1.ToolTip" xml:space="preserve">
     <value>This puts the fully question into a search engine and looks
-through the page for the answers. This is quicker then meathod 2
-and will return 2 different answers based on two different meathods 
+through the page for the answers. This is quicker then method 2
+and will return 2 different answers based on two different methods 
 of searching.</value>
   </data>
 </root>

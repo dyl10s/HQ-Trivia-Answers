@@ -22,8 +22,8 @@ Partial Class frmSearchEngines
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.lbMeathod1 = New System.Windows.Forms.ListBox()
-        Me.lbMeathod2 = New System.Windows.Forms.ListBox()
+        Me.lbmethod1 = New System.Windows.Forms.ListBox()
+        Me.lbmethod2 = New System.Windows.Forms.ListBox()
         Me.lblM4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnAdd = New System.Windows.Forms.Button()
@@ -31,21 +31,21 @@ Partial Class frmSearchEngines
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'lbMeathod1
+        'lbmethod1
         '
-        Me.lbMeathod1.FormattingEnabled = True
-        Me.lbMeathod1.Location = New System.Drawing.Point(12, 114)
-        Me.lbMeathod1.Name = "lbMeathod1"
-        Me.lbMeathod1.Size = New System.Drawing.Size(120, 173)
-        Me.lbMeathod1.TabIndex = 0
+        Me.lbmethod1.FormattingEnabled = True
+        Me.lbmethod1.Location = New System.Drawing.Point(12, 114)
+        Me.lbmethod1.Name = "lbmethod1"
+        Me.lbmethod1.Size = New System.Drawing.Size(120, 173)
+        Me.lbmethod1.TabIndex = 0
         '
-        'lbMeathod2
+        'lbmethod2
         '
-        Me.lbMeathod2.FormattingEnabled = True
-        Me.lbMeathod2.Location = New System.Drawing.Point(152, 114)
-        Me.lbMeathod2.Name = "lbMeathod2"
-        Me.lbMeathod2.Size = New System.Drawing.Size(120, 173)
-        Me.lbMeathod2.TabIndex = 1
+        Me.lbmethod2.FormattingEnabled = True
+        Me.lbmethod2.Location = New System.Drawing.Point(152, 114)
+        Me.lbmethod2.Name = "lbmethod2"
+        Me.lbmethod2.Size = New System.Drawing.Size(120, 173)
+        Me.lbmethod2.TabIndex = 1
         '
         'lblM4
         '
@@ -54,7 +54,7 @@ Partial Class frmSearchEngines
         Me.lblM4.Name = "lblM4"
         Me.lblM4.Size = New System.Drawing.Size(120, 25)
         Me.lblM4.TabIndex = 31
-        Me.lblM4.Text = "Meathod 1"
+        Me.lblM4.Text = "method 1"
         Me.lblM4.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label1
@@ -64,7 +64,7 @@ Partial Class frmSearchEngines
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(120, 25)
         Me.Label1.TabIndex = 32
-        Me.Label1.Text = "Meathod 2"
+        Me.Label1.Text = "method 2"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'btnAdd
@@ -104,16 +104,16 @@ Partial Class frmSearchEngines
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblM4)
-        Me.Controls.Add(Me.lbMeathod2)
-        Me.Controls.Add(Me.lbMeathod1)
+        Me.Controls.Add(Me.lbmethod2)
+        Me.Controls.Add(Me.lbmethod1)
         Me.Name = "frmSearchEngines"
         Me.Text = "Search Engines"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents lbMeathod1 As ListBox
-    Friend WithEvents lbMeathod2 As ListBox
+    Friend WithEvents lbmethod1 As ListBox
+    Friend WithEvents lbmethod2 As ListBox
     Friend WithEvents lblM4 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents btnAdd As Button

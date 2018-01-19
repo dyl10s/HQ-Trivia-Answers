@@ -30,8 +30,8 @@ Partial Class frmMain
         Me.txtOutput = New System.Windows.Forms.TextBox()
         Me.cbxBW = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.cbxMeathod1 = New System.Windows.Forms.CheckBox()
-        Me.cbxMeathod2 = New System.Windows.Forms.CheckBox()
+        Me.cbxmethod1 = New System.Windows.Forms.CheckBox()
+        Me.cbxmethod2 = New System.Windows.Forms.CheckBox()
         Me.btnSearchEngines = New System.Windows.Forms.Button()
         Me.ttBW = New System.Windows.Forms.ToolTip(Me.components)
         Me.SuspendLayout()
@@ -95,29 +95,29 @@ Partial Class frmMain
         Me.Label1.Text = "Settings"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'cbxMeathod1
+        'cbxmethod1
         '
-        Me.cbxMeathod1.Location = New System.Drawing.Point(246, 179)
-        Me.cbxMeathod1.Name = "cbxMeathod1"
-        Me.cbxMeathod1.Size = New System.Drawing.Size(137, 41)
-        Me.cbxMeathod1.TabIndex = 34
-        Me.cbxMeathod1.Text = "[Meathod 1] Search for question with answers"
-        Me.cbxMeathod1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ttBW.SetToolTip(Me.cbxMeathod1, resources.GetString("cbxMeathod1.ToolTip"))
-        Me.cbxMeathod1.UseVisualStyleBackColor = True
+        Me.cbxmethod1.Location = New System.Drawing.Point(246, 179)
+        Me.cbxmethod1.Name = "cbxmethod1"
+        Me.cbxmethod1.Size = New System.Drawing.Size(137, 41)
+        Me.cbxmethod1.TabIndex = 34
+        Me.cbxmethod1.Text = "[Method 1] Search for question with answers"
+        Me.cbxmethod1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ttBW.SetToolTip(Me.cbxmethod1, resources.GetString("cbxmethod1.ToolTip"))
+        Me.cbxmethod1.UseVisualStyleBackColor = True
         '
-        'cbxMeathod2
+        'cbxmethod2
         '
-        Me.cbxMeathod2.Location = New System.Drawing.Point(246, 226)
-        Me.cbxMeathod2.Name = "cbxMeathod2"
-        Me.cbxMeathod2.Size = New System.Drawing.Size(137, 41)
-        Me.cbxMeathod2.TabIndex = 35
-        Me.cbxMeathod2.Text = "[Meathod 2} Search for answer with question"
-        Me.cbxMeathod2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ttBW.SetToolTip(Me.cbxMeathod2, "This does 3 searches for each answer and attempts to extract" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "key words from the " &
-        "question to look for. This takes a longer" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "amount of time then meathod 1 because" &
-        " it has to preform 3 searches.")
-        Me.cbxMeathod2.UseVisualStyleBackColor = True
+        Me.cbxmethod2.Location = New System.Drawing.Point(246, 226)
+        Me.cbxmethod2.Name = "cbxmethod2"
+        Me.cbxmethod2.Size = New System.Drawing.Size(137, 41)
+        Me.cbxmethod2.TabIndex = 35
+        Me.cbxmethod2.Text = "[Method 2} Search for answer with question"
+        Me.cbxmethod2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ttBW.SetToolTip(Me.cbxmethod2, "This does 3 searches for each answer and attempts to extract" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "key words from the " &
+        "question to look for. This takes a longer" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "amount of time then method 1 because " &
+        "it has to preform 3 searches.")
+        Me.cbxmethod2.UseVisualStyleBackColor = True
         '
         'btnSearchEngines
         '
@@ -134,8 +134,8 @@ Partial Class frmMain
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(397, 364)
         Me.Controls.Add(Me.btnSearchEngines)
-        Me.Controls.Add(Me.cbxMeathod2)
-        Me.Controls.Add(Me.cbxMeathod1)
+        Me.Controls.Add(Me.cbxmethod2)
+        Me.Controls.Add(Me.cbxmethod1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.cbxBW)
         Me.Controls.Add(Me.txtOutput)
@@ -154,8 +154,8 @@ Partial Class frmMain
     Friend WithEvents txtOutput As TextBox
     Friend WithEvents cbxBW As CheckBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents cbxMeathod1 As CheckBox
-    Friend WithEvents cbxMeathod2 As CheckBox
+    Friend WithEvents cbxmethod1 As CheckBox
+    Friend WithEvents cbxmethod2 As CheckBox
     Friend WithEvents btnSearchEngines As Button
     Friend WithEvents ttBW As ToolTip
 End Class

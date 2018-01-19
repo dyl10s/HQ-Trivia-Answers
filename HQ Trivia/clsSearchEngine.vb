@@ -2,18 +2,18 @@
 
     Dim label As String = ""
     Dim url As String = ""
-    Dim meathod As Integer
+    Dim method As Integer
 
-    Public Sub New(label As String, url As String, meathod As Integer)
+    Public Sub New(label As String, url As String, method As Integer)
         Me.label = label
         Me.url = url
-        Me.meathod = meathod
+        Me.method = method
     End Sub
 
 
     Public Overrides Function toString() As String
 
-        Return label + ";" + url + ";" + meathod.ToString
+        Return label + ";" + url + ";" + method.ToString
 
     End Function
 
