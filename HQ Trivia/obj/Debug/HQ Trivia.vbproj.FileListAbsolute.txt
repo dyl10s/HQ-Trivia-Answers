@@ -1,0 +1,36 @@
+C:\Users\dstro\Source\Repos\HQ-Trivia-Answers\HQ Trivia\bin\Debug\x64\liblept1742.dll
+C:\Users\dstro\Source\Repos\HQ-Trivia-Answers\HQ Trivia\bin\Debug\x64\libtesseract3051.dll
+C:\Users\dstro\Source\Repos\HQ-Trivia-Answers\HQ Trivia\bin\Debug\x86\liblept1742.dll
+C:\Users\dstro\Source\Repos\HQ-Trivia-Answers\HQ Trivia\bin\Debug\x86\libtesseract3051.dll
+C:\Users\dstro\Source\Repos\HQ-Trivia-Answers\HQ Trivia\bin\Debug\Tesseract.dll
+C:\Users\dstro\Source\Repos\HQ-Trivia-Answers\HQ Trivia\bin\Debug\Tesseract.xml
+C:\Users\dstro\Source\Repos\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ Trivia.vbprojResolveAssemblyReference.cache
+C:\Users\dstro\Source\Repos\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ_Trivia.frmMain.resources
+C:\Users\dstro\Source\Repos\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ_Trivia.frmScreenshot.resources
+C:\Users\dstro\Source\Repos\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ_Trivia.frmSearchEngines.resources
+C:\Users\dstro\Source\Repos\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ_Trivia.Resources.resources
+C:\Users\dstro\Source\Repos\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ Trivia.vbproj.GenerateResource.Cache
+C:\Users\dstro\Source\Repos\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ Trivia.vbproj.CoreCompileInputs.cache
+C:\Users\dstro\Source\Repos\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ Trivia.exe
+C:\Users\dstro\Source\Repos\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ Trivia.xml
+C:\Users\dstro\Source\Repos\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ Trivia.pdb
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\bin\Debug\x64\liblept172.dll
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\bin\Debug\x64\libtesseract304.dll
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\bin\Debug\x86\liblept172.dll
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\bin\Debug\x86\libtesseract304.dll
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\bin\Debug\Tesseract.dll
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\bin\Debug\Tesseract.xml
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ Trivia.vbprojResolveAssemblyReference.cache
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ_Trivia.frmMain.resources
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ_Trivia.frmScreenshot.resources
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ_Trivia.frmSearchEngines.resources
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ_Trivia.Resources.resources
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ Trivia.vbproj.GenerateResource.Cache
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ Trivia.vbproj.CoreCompileInputs.cache
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ Trivia.exe
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ Trivia.xml
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\obj\Debug\HQ Trivia.pdb
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\bin\Debug\HQ Trivia.exe.config
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\bin\Debug\HQ Trivia.exe
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\bin\Debug\HQ Trivia.pdb
+E:\VB Projects\HQ-Trivia-Answers\HQ Trivia\bin\Debug\HQ Trivia.xml

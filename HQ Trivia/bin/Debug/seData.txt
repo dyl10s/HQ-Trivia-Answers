@@ -1,0 +1,2 @@
+﻿Google;https://www.google.com/search?q=;1
+Google;https://www.google.com/search?q=?q=;2
